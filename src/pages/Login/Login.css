@@ -1,0 +1,232 @@
+/* === ГЛОБАЛЬНИЙ ЛЕЙАУТ === */
+
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+    background: #f5f6fa;
+    padding-right: 100px;
+    border-radius: 0 0 220px 220px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  /* Whiteblock */
+.whiteblock{
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 80px;
+    background-color: #fff;
+}
+.group85{
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    background-image: url(/src/assets/images/Group85.png);
+    bottom: 100px;
+    left: 220px;
+}
+.group87{
+    position: absolute;
+    width: 99%;
+    height: 250px;
+    background-image: url(/src/assets/images/Group87.png);
+    z-index: 0;
+}
+
+  /* === ЛІВА ПАНЕЛЬ (LOGO + TEXT) === */
+
+.login-left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8vw;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 84px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #999;
+    letter-spacing: 3px;
+    margin-left: 80px;
+}
+
+  /* === КАРТКА (ФОМА) === */
+
+.login-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 26px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    z-index: 2;
+}
+
+  /* === GOOGLE BUTTON === */
+
+.google-btn {
+    width: 50%;
+    padding: 12px;
+    border-radius: 14px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: none;
+    transition: all 0.15s ease-in-out;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 9px #d1cfcf;
+}
+
+.google-btn:hover {
+    background: #fafafa;
+    border-color: #ccc;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(/src/assets/images/icons8-google-48.png);
+    background-size: cover;
+}
+.google-txt{
+    color: #888;
+}
+  /* "АБО" ТЕКСТ */
+
+.or {
+    margin: 22px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+  /* === INPUTS === */
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    padding: 14px;
+    border-radius: 27px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.15s;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 9px #d1cfcf;
+}
+
+input:focus {
+    border-color: #ff7a00;
+}
+
+  /* === BUTTONS === */
+
+.main-btn {
+    width: 100%;
+    padding: 16px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: 0.2s;
+    box-shadow: 1px 1px 9px #d1cfcf;
+}
+
+.main-btn:hover {
+    background: #e76d00;
+}
+
+.sec-btn {
+    width: 100%;
+    padding: 16px;
+    background: #f2f2f2;
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+    box-shadow: 1px 1px 9px #d1cfcf;
+}
+
+.sec-btn:hover {
+    background: #e2e2e2;
+}
+
+  /*  А Д А П Т И В ========================================= */
+
+@media (max-width: 1024px) {
+    .login-left {
+        padding-left: 5vw;
+    }
+
+    .logo {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 850px) {
+    .login-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    .login-left {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .login-card {
+        width: 90%;
+        max-width: 420px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 42px;
+    }
+
+    .login-card {
+        padding: 30px;
+    }
+
+    input,
+    .main-btn,
+    .sec-btn,
+    .google-btn {
+        font-size: 15px;
+        padding: 13px;
+    }
+}

@@ -1,8 +1,9 @@
 import InvestiqDashboard from "../../pages/DashboardPage/PayTracker";
+import Login from "../../pages/Login/Login";
 
 function App() {
     return (
-        <InvestiqDashboard></InvestiqDashboard>
+        <Login></Login>
     )
 }
 
