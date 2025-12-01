@@ -12,10 +12,11 @@
   /* Whiteblock */
 .whiteblock{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 99%;
     height: 80px;
     background-color: #fff;
+    z-index: 0;
 }
 .group85{
     position: absolute;
